@@ -1,8 +1,11 @@
+import { PlayersController } from './controllers/PlayersController.js';
 import { router } from './router-config.js';
 
 class App {
 
   router = router
+
+  PlayersController = new PlayersController()
 
   init() {
     this.router.init(app)
