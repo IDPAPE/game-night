@@ -12,10 +12,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
   <title>game-night</title>
 </head>
 
-<body>
+<body class="debug">
   <!-- SECTION -->
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
@@ -41,8 +43,15 @@
   <!-- SECTION -->
   <main>
 
-    <section id="router-view">
-      <!-- primary viewport -->
+    <!-- <section id="router-view">
+      primary viewport
+    </section> -->
+
+    <section id="player-rows" class="container">
+      <div class="row">
+        <h1>Amanda <button class="btn border border-dark">➖</button> 0 <button class="btn border-dark">➕</button>
+        </h1>
+      </div>
     </section>
 
   </main>
